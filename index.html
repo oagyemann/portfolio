@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://kit.fontawesome.com/3802c396db.js" crossorigin="anonymous"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100;300;400;600;700&display=swap"
+        rel="stylesheet"
+    />
+
+    <title>Personal website</title>
+    </head>
+    <body>
+        <div class="container">
+        <section class="header header-one">
+            <nav>
+                <a href="index.html"></a>
+                <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" style="color:white" onclick="hideMenu()"></i>
+
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT ME</a></li>
+                    <li><a href="#chop">CONTACT</a></li>
+                </ul>
+                    
+                    
+
+                </div>
+                <i class="fa-solid fa-bars" style="color: white;" onclick="showMenu()"></i>
+            </nav>
+
+        <div class="text-box">
+            <h1>Hey, I'm Nana Yaw...</h1>
+            <p>and this is my portfolio, well, sort of. Now you wouldn't want me to bore you with details on my life, would you? <br> If you do insist on knowing however, click on the button bellow; otherwise, scroll on!
+            </p>
+            <a href="about.html" class="hero-btn">About Me</a>
+        </div>
+        </section>
+            
+<!--projects-->
+
+<section class="header header-two">
+
+    <h1>Projects I've worked on</h1>
+    <p>Well, officially, none yet so I've just filled this section with dummy texts. </p>
+
+    <div class="row">
+        <div class="course-col">
+            <h3>Lorem</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor nobis ea consectetur, obcaecati fuga hic cupiditate non sit libero enim quasi, placeat reiciendis ipsam harum possimus tempora autem molestiae? Nam!</p>
+        </div>
+        <div class="course-col">
+            <h3>Lorem</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor nobis ea consectetur, obcaecati fuga hic cupiditate non sit libero enim quasi, placeat reiciendis ipsam harum possimus tempora autem molestiae? Nam!</p>
+        </div>
+        <div class="course-col">
+            <h3>Lorem</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor nobis ea consectetur, obcaecati fuga hic cupiditate non sit libero enim quasi, placeat reiciendis ipsam harum possimus tempora autem molestiae? Nam!</p>
+        </div>
+    </div>
+
+</section>
+
+
+<!--testimonials-->
+<section class="testimonials">
+    <h1>Testimonials</h1>
+    <p>Take these with a grain of salt</p>
+    <div class="row">
+        <div class="testimonials-col">
+            <img src="oldrihanna.jpeg" alt="">
+            <div>
+                <p>
+                    Nana Yaw is such a hardworking and determined guy. Met him back in 2005 before the release of my first hit single and he played a massive role in its success!
+                </p>
+                <h3>Rihanna Fenty</h3>
+            </div>
+        </div>
+        <div class="testimonials-col">
+            <img src="travis.jpeg" alt="">
+            <div>
+                <p>
+                    My go to guy for everything tech related. Very reliable and he just makes things work. One would think he's the highest in the room!
+                </p>
+                <h3>Travis Scott</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!---contact-->
+<div class="facilities-col">
+            
+            
+            <p class="pretext" style="text-align: center;"> So now the big question is: Does this Nana Yaw guy really know how to code? Well, use this website to judge that. <br> Need me to build one for you? Or you just want to make general enquiries? Fill the tiny form below and I will get in touch.</p>
+        </div>
+<div class="comment-box">
+                        <h3 id="chop">Leave a message</h3>
+
+                        <form
+                            class="comment-form"
+                            action="https://formspree.io/f/mgedjpwk"
+                            method="POST"
+>
+                            <label>
+                                <input type="email" name="email" placeholder="Your Email">
+                            </label>
+                                <textarea name="message" placeholder="Your Message"></textarea>
+                            </label>
+                            
+                            
+                            
+                            
+                            <button type="submit" class="hero-btn, redbtn" id="redbtn">Send</button>
+                        </form>
+                    </div>
+
+
+<section class="cta">
+    <h1 style="text-transform: capitalize;">Alternatively,</h1>
+    <a href="tel:+233272656965" class="hero-btn">CONTACT ME</a>
+</section>
+
+<!--footer-->
+
+<section class="footer">
+    <h4>Thanks for visiting!</h4>
+    <p></p>
+    <div class="icons">
+        <i class="fa-brands fa-facebook-square"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-linkedin-in"></i>
+    </div>
+</section>
+
+
+
+
+
+
+
+<!--java script for toggle menu-->
+        <SCRIpt>
+            var navLinks = document.getElementById("navLinks")
+
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+        </SCRIpt>
+        
+        </div>
+    </body>
+</html>

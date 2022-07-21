@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://kit.fontawesome.com/3802c396db.js" crossorigin="anonymous"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100;300;400;600;700&display=swap"
+        rel="stylesheet"
+    />
+
+    <title>Personal website</title>
+    </head>
+    <body>
+        <div class="container">
+        <section class="header header-one">
+            <nav>
+                <a href="index.html"></a>
+                <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" style="color:white" onclick="hideMenu()"></i>
+
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT ME</a></li>
+                    
+                    
+                </ul>
+
+                </div>
+                <i class="fa-solid fa-bars" style="color: white;" onclick="showMenu()"></i>
+            </nav>
+            <h2 class="text-box">About Me</h2>
+        
+        </section>
+
+        <!--abbout us content-->
+        <section class="about-us">
+
+            <div class="about-col">
+                <h1>Everything you should know</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste maiores, in nostrum, consequuntur nisi atque tempora nulla totam voluptatem perspiciatis velit, officia eum laudantium dolor alias accusantium. Provident placeat laboriosam voluptatum illo blanditiis ea. Iste?</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi in quos officia ab pariatur accusamus eligendi reprehenderit omnis animi labore. Quos fuga dolorem recusandae, ipsa magnam ullam atque. Necessitatibus, laudantium!</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem recusandae quasi soluta minus ducimus facere excepturi? Sit laudantium amet quibusdam ad magni quidem molestiae, quae iusto ea? Magnam, assumenda officia?</p>
+                <a href="tel:+233272656965" class="hero-btn red-btn">CONTACT ME</a>
+            </div>
+            <div class="about-col">
+                <img src="" alt="">
+            </div>
+        </section>
+
+
+
+
+<!--footer-->
+
+<section class="footer">
+    <h4>Thanks for visiting!</h4>
+    <p></p>
+    <div class="icons">
+        <i class="fa-brands fa-facebook-square"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-linkedin-in"></i>
+    </div>
+</section>
+
+
+
+
+
+
+
+<!--java script for toggle menu-->
+        <SCRIpt>
+            var navLinks = document.getElementById("navLinks")
+
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+        </SCRIpt>
+    </body>
+</html>
